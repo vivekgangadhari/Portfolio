@@ -1,0 +1,450 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vivek Gangadhari | Full Stack Developer & AI Enthusiast</title>
+    <meta name="description" content="Portfolio of Vivek Gangadhari, a B.Tech CSE student specializing in Python, AI, and Web Technologies.">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Outfit:wght@400;600;800&display=swap" rel="stylesheet">
+    <!-- Boxicons for Icons -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="dark-theme">
+
+    <!-- Interactive Canvas Background -->
+    <canvas id="neural-canvas"></canvas>
+
+    <!-- Dynamic Background Elements -->
+    <div class="bg-shape shape-1"></div>
+    <div class="bg-shape shape-2"></div>
+    <div class="bg-shape shape-3"></div>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="logo">Vivek</div>
+        <ul class="nav-links">
+            <li><a href="#home" class="active">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#achievements">Achievements</a></li>
+        </ul>
+        <div class="navbar-actions">
+            <button id="theme-toggle" class="theme-btn" aria-label="Toggle Theme">
+                <i class='bx bx-moon'></i>
+            </button>
+            <div class="hamburger">
+                <i class='bx bx-menu'></i>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero section-spacing reveal">
+        <div class="hero-content glass-card">
+            <p class="greeting">Hello, I'm</p>
+            <h1 class="name">Vivek <span class="gradient-text">Gangadhari</span></h1>
+            <h2 class="title"><span class="typing-text"></span><span class="typed-cursor">|</span></h2>
+            <p class="objective">
+                Aspiring software engineer eager to improve skills and knowledge, contributing to dynamic organizational goals through continuous learning and problem-solving.
+            </p>
+            <div class="hero-buttons">
+                <a href="#projects" class="btn btn-primary">View Work <i class='bx bx-right-arrow-alt'></i></a>
+                <a href="resume.pdf" target="_blank" class="btn btn-secondary"><i class='bx bx-download'></i> Download CV</a>
+            </div>
+            <div class="social-links">
+                <a href="https://github.com/vivekgangadhari" target="_blank" aria-label="GitHub"><i class='bx bxl-github'></i></a>
+                <a href="https://linkedin.com/in/gangadhari-vivek-0480ba287" target="_blank" aria-label="LinkedIn"><i class='bx bxl-linkedin-square'></i></a>
+                <a href="mailto:gangadharivivek6@gmail.com" aria-label="Email"><i class='bx bx-envelope'></i></a>
+            </div>
+        </div>
+        
+        <div class="hero-image reveal-right">
+            <div class="image-container-wrapper">
+                <!-- Orbiting Rings -->
+                <div class="orbit orbit-1"></div>
+                <div class="orbit orbit-2"></div>
+                
+                <div class="image-wrapper">
+                    <img src="profile.jpg" alt="Vivek Gangadhari" class="profile-img">
+                </div>
+
+                <!-- Floating tech badges -->
+                <div class="tech-badge badge-python"><i class='bx bxl-python'></i></div>
+                <div class="tech-badge badge-ai"><i class='bx bx-brain'></i></div>
+                <div class="tech-badge badge-code"><i class='bx bx-code-alt'></i></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About & Education Section -->
+    <section id="about" class="about section-spacing">
+        <div class="section-title reveal">
+            <h2><span class="gradient-text">About</span> Me</h2>
+            <p>My academic journey and soft skills.</p>
+        </div>
+
+        <!-- Quick Stats Cards -->
+        <div class="stats-grid reveal">
+            <div class="stat-card glass-card">
+                <i class='bx bxs-graduation'></i>
+                <h3>9.17</h3>
+                <p>B.Tech CGPA</p>
+            </div>
+            <div class="stat-card glass-card">
+                <i class='bx bx-notepad'></i>
+                <h3>10/10</h3>
+                <p>10th CGPA</p>
+            </div>
+            <div class="stat-card glass-card">
+                <i class='bx bxs-trophy'></i>
+                <h3>SIH 2025</h3>
+                <p>Hackathon Winner</p>
+            </div>
+            <div class="stat-card glass-card">
+                <i class='bx bx-code-block'></i>
+                <h3>3+</h3>
+                <p>AI Projects</p>
+            </div>
+        </div>
+        
+        <div class="about-container">
+            <div class="education-timeline reveal-left">
+                <h3>Education Timeline</h3>
+                <div class="timeline">
+                    <div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content glass-card">
+                            <h4>B.Tech in Computer Science and Engineering</h4>
+                            <p class="institute">Kommuri Pratap Reddy Institute Of Technology, Hyderabad</p>
+                            <span class="duration">Nov 2022 - Present</span>
+                            <span class="score">CGPA: 9.17</span>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content glass-card">
+                            <h4>Intermediate (MPC)</h4>
+                            <p class="institute">Sigma Junior College, Hanamkonda</p>
+                            <span class="duration">2020 - 2022</span>
+                            <span class="score">Marks: 877 / 1000</span>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content glass-card">
+                            <h4>10th Class (SSC)</h4>
+                            <p class="institute">Aryabhatta High School, Thorrur</p>
+                            <span class="duration">2019 - 2020</span>
+                            <span class="score">CGPA: 10</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="soft-skills reveal-right">
+                <h3>Key Strengths</h3>
+                <div class="soft-skills-grid">
+                    <div class="skill-card glass-card">
+                        <i class='bx bx-brain'></i>
+                        <h4>Problem Solving</h4>
+                        <p>Analytical approach to tackling complex algorithmic challenges.</p>
+                    </div>
+                    <div class="skill-card glass-card">
+                        <i class='bx bx-group'></i>
+                        <h4>Team Collaboration</h4>
+                        <p>Strong communicator and active participant in hackathons & team projects.</p>
+                    </div>
+                    <div class="skill-card glass-card">
+                        <i class='bx bx-rocket'></i>
+                        <h4>Eager to Learn</h4>
+                        <p>Quickly adapting to new APIs, models, and industry technologies.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Technical Skills Section -->
+    <section id="skills" class="skills section-spacing">
+        <div class="section-title reveal">
+            <h2>Technical <span class="gradient-text">Skills</span></h2>
+            <p>Tools and technologies I specialize in.</p>
+        </div>
+        <div class="skills-wrapper reveal">
+            <div class="skill-category glass-card">
+                <h3>Languages & Databases</h3>
+                <div class="skills-progress-list">
+                    <div class="progress-item">
+                        <div class="progress-info">
+                            <span><i class='bx bxl-python'></i> Python</span>
+                            <span>90%</span>
+                        </div>
+                        <div class="progress-bar"><div class="progress-fill" style="--progress: 90%; --theme-color: #38bdf8;"></div></div>
+                    </div>
+                    <div class="progress-item">
+                        <div class="progress-info">
+                            <span><i class='bx bxl-html5'></i> HTML5 & CSS3</span>
+                            <span>85%</span>
+                        </div>
+                        <div class="progress-bar"><div class="progress-fill" style="--progress: 85%; --theme-color: #f97316;"></div></div>
+                    </div>
+                    <div class="progress-item">
+                        <div class="progress-info">
+                            <span><i class='bx bxs-data'></i> SQL / Databases</span>
+                            <span>80%</span>
+                        </div>
+                        <div class="progress-bar"><div class="progress-fill" style="--progress: 80%; --theme-color: #06b6d4;"></div></div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="skill-category glass-card">
+                <h3>Tools & Platforms</h3>
+                <div class="skills-progress-list">
+                    <div class="progress-item">
+                        <div class="progress-info">
+                            <span><i class='bx bxl-git'></i> Git & GitHub</span>
+                            <span>85%</span>
+                        </div>
+                        <div class="progress-bar"><div class="progress-fill" style="--progress: 85%; --theme-color: #f43f5e;"></div></div>
+                    </div>
+                    <div class="progress-item">
+                        <div class="progress-info">
+                            <span><i class='bx bx-code-block'></i> VS Code</span>
+                            <span>90%</span>
+                        </div>
+                        <div class="progress-bar"><div class="progress-fill" style="--progress: 90%; --theme-color: #6366f1;"></div></div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="skill-category glass-card">
+                <h3>Core Domains</h3>
+                <div class="skills-progress-list">
+                    <div class="progress-item">
+                        <div class="progress-info">
+                            <span><i class='bx bx-bot'></i> Artificial Intelligence</span>
+                            <span>85%</span>
+                        </div>
+                        <div class="progress-bar"><div class="progress-fill" style="--progress: 85%; --theme-color: #a855f7;"></div></div>
+                    </div>
+                    <div class="progress-item">
+                        <div class="progress-info">
+                            <span><i class='bx bx-brain'></i> Deep Learning (YOLO, CNNs)</span>
+                            <span>80%</span>
+                        </div>
+                        <div class="progress-bar"><div class="progress-fill" style="--progress: 80%; --theme-color: #ec4899;"></div></div>
+                    </div>
+                    <div class="progress-item">
+                        <div class="progress-info">
+                            <span><i class='bx bx-lock-alt'></i> Cyber Security & NLP</span>
+                            <span>75%</span>
+                        </div>
+                        <div class="progress-bar"><div class="progress-fill" style="--progress: 75%; --theme-color: #10b981;"></div></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects section-spacing">
+        <div class="section-title reveal">
+            <h2>Featured <span class="gradient-text">Projects</span></h2>
+            <p>Select work built during my B.Tech curriculum.</p>
+        </div>
+
+        <!-- Project Filters -->
+        <div class="project-filters reveal">
+            <button class="filter-btn active" data-filter="all">All Projects</button>
+            <button class="filter-btn" data-filter="ai-ml">AI / Deep Learning</button>
+            <button class="filter-btn" data-filter="web-dev">Web Apps</button>
+            <button class="filter-btn" data-filter="cybersecurity">Cybersecurity</button>
+        </div>
+        
+        <div class="project-grid">
+            <!-- Project 1 -->
+            <div class="project-card glass-card reveal" data-category="ai-ml">
+                <div class="project-content">
+                    <div class="project-header">
+                        <i class='bx bx-scan'></i>
+                        <h3>Enhanced Object Detection</h3>
+                    </div>
+                    <p class="project-desc">
+                        Built a deep learning system using CNN-BiLSTM and YOLO for automatic inspection, featuring a GUI for dataset visualization.
+                    </p>
+                    <div class="project-tech">
+                        <span>Python</span>
+                        <span>YOLO</span>
+                        <span>CNN-BiLSTM</span>
+                        <span>Tkinter</span>
+                    </div>
+                    <button class="btn-detail-trigger" onclick="openProjectModal('object-detection')">
+                        Learn More <i class='bx bx-right-arrow-alt'></i>
+                    </button>
+                </div>
+            </div>
+
+            <!-- Project 2 -->
+            <div class="project-card glass-card reveal" data-category="ai-ml web-dev">
+                <div class="project-content">
+                    <div class="project-header">
+                        <i class='bx bx-message-rounded-dots'></i>
+                        <h3>Maya AI-Powered Chatbot</h3>
+                    </div>
+                    <p class="project-desc">
+                        Developed a contextual conversational assistant leveraging Google Gemini API with file uploads and dynamic message streams.
+                    </p>
+                    <div class="project-tech">
+                        <span>Python</span>
+                        <span>Gemini API</span>
+                        <span>AI</span>
+                        <span>Web Tech</span>
+                    </div>
+                    <button class="btn-detail-trigger" onclick="openProjectModal('chatbot')">
+                        Learn More <i class='bx bx-right-arrow-alt'></i>
+                    </button>
+                </div>
+            </div>
+
+            <!-- Project 3 -->
+            <div class="project-card glass-card reveal" data-category="cybersecurity ai-ml">
+                <div class="project-content">
+                    <div class="project-header">
+                        <i class='bx bx-shield-quarter'></i>
+                        <h3>Medical AI Threat Prediction</h3>
+                    </div>
+                    <p class="project-desc">
+                        Constructed an AI NLP engine analyzing healthcare cybersecurity breach reports to identify hazards and recommend mitigation strategies.
+                    </p>
+                    <div class="project-tech">
+                        <span>NLP</span>
+                        <span>Python</span>
+                        <span>Cybersecurity</span>
+                        <span>Scikit-Learn</span>
+                    </div>
+                    <button class="btn-detail-trigger" onclick="openProjectModal('threat-prediction')">
+                        Learn More <i class='bx bx-right-arrow-alt'></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Achievements Section -->
+    <section id="achievements" class="achievements section-spacing">
+        <div class="section-title reveal">
+            <h2><span class="gradient-text">Achievements</span> & Training</h2>
+            <p>Milestones and external professional validation.</p>
+        </div>
+        
+        <div class="achievements-list">
+            <div class="achievement-item glass-card reveal-left">
+                <div class="icon-box"><i class='bx bxs-trophy'></i></div>
+                <div class="achievement-text">
+                    <h4>Smart India Hackathon (SIH) 2025 Winner</h4>
+                    <p>Internal hackathon winner at KPRIT (October 2025) for proposing automated medical compliance systems.</p>
+                </div>
+            </div>
+            
+            <div class="achievement-item glass-card reveal-right">
+                <div class="icon-box"><i class='bx bxs-certification'></i></div>
+                <div class="achievement-text">
+                    <h4>Accenture Data Analytics Certification</h4>
+                    <p>Earned Accenture badge in Data Analytics and Visualization (November 2024), analyzing high-dimensional user behavior datasets.</p>
+                </div>
+            </div>
+
+            <div class="achievement-item glass-card reveal-left">
+                <div class="icon-box"><i class='bx bx-code-curly'></i></div>
+                <div class="achievement-text">
+                    <h4>TNS Training completion</h4>
+                    <p>Successfully completed 120-hour intensive program in Advanced Java, Object-Oriented Principles, and Business Communications (Sept 2025).</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer / Contact Section -->
+    <footer id="contact" class="footer">
+        <div class="footer-content glass-card reveal">
+            <h2>Let's build something amazing together</h2>
+            <p>I am seeking junior software engineering or developer opportunities and internships. Feel free to connect!</p>
+            
+            <div class="contact-info">
+                <a href="mailto:gangadharivivek6@gmail.com" class="contact-link">
+                    <i class='bx bx-envelope'></i> gangadharivivek6@gmail.com
+                </a>
+                <a href="tel:+917013363653" class="contact-link">
+                    <i class='bx bx-phone'></i> +91 7013363653
+                </a>
+            </div>
+            
+            <div class="social-links footer-social">
+                <a href="https://github.com/vivekgangadhari" target="_blank" aria-label="GitHub"><i class='bx bxl-github'></i></a>
+                <a href="https://linkedin.com/in/gangadhari-vivek-0480ba287" target="_blank" aria-label="LinkedIn"><i class='bx bxl-linkedin-square'></i></a>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>&copy; 2026 Vivek Gangadhari. Designed & Built with ❤️ and Modern Web Tech.</p>
+        </div>
+    </footer>
+
+    <!-- Floating AI Chatbot Widget -->
+    <div class="chatbot-widget">
+        <button id="chatbot-toggle" class="chatbot-toggle-btn" aria-label="Chat with Maya AI">
+            <i class='bx bx-bot'></i>
+            <span class="pulse-ring"></span>
+        </button>
+        
+        <div class="chatbot-container glass-card">
+            <div class="chatbot-header">
+                <div class="chatbot-info">
+                    <i class='bx bx-bot'></i>
+                    <div>
+                        <h4>Maya AI</h4>
+                        <p class="status"><span class="status-dot"></span> Assistant Online</p>
+                    </div>
+                </div>
+                <button id="chatbot-close" class="close-chat-btn"><i class='bx bx-x'></i></button>
+            </div>
+            
+            <div class="chatbot-messages" id="chatbot-messages">
+                <div class="message bot-message">
+                    <p>Hello! I'm Maya, Vivek's AI assistant. Ask me anything about Vivek's skills, education, or projects!</p>
+                </div>
+            </div>
+            
+            <div class="chatbot-suggestions">
+                <button class="suggest-btn" data-question="skills">What are Vivek's skills?</button>
+                <button class="suggest-btn" data-question="sih">Tell me about SIH 2025</button>
+                <button class="suggest-btn" data-question="projects">What projects did he build?</button>
+                <button class="suggest-btn" data-question="contact">How to contact Vivek?</button>
+            </div>
+            
+            <div class="chatbot-input-container">
+                <input type="text" id="chatbot-input" placeholder="Type a message..." autocomplete="off">
+                <button id="chatbot-send-btn" aria-label="Send Message"><i class='bx bx-send'></i></button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Project Details Modal Lightbox -->
+    <div id="project-modal" class="modal">
+        <div class="modal-content glass-card">
+            <span class="close-modal">&times;</span>
+            <div id="modal-details-body">
+                <!-- Content injected dynamically -->
+            </div>
+        </div>
+    </div>
+
+    <!-- Core Interactions Script -->
+    <script src="script.js"></script>
+</body>
+</html>
